@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TIC TAC TOE GAME BUTTON NAVIGATION</title>
+    <style>
+        * {
+            margin: 0;         /* using inline css */
+            padding: 0;
+            font-size:50px;
+        }
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ1yDLFR86WzPn6PosggoT46GnaCVwEVdvqvWxSvU-LfGqMsGCgrnezh-ssDbG_yBxJ4c&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #background {
+            width: 100%;
+            height: 710px;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+        }
+              
+       #title{
+     font-size: 70px;
+     text-align: center;
+     position: fixed;
+     top:50px;
+     left:0px;
+     width:100%;
+     height:80px;
+     padding:15px;
+     background-color:#70D6FB;
+     border-top:10px double black;
+     border-bottom:10px double black;
+        }
+   
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 50px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 14px #999;
+            margin:60px;
+            border:7px solid white;
+        }
+        button:hover {
+            background-color: #3e8e41;
+        }
+        button:active {
+            background-color: rgb(213, 58, 58);
+            box-shadow: 0 20px #666;
+            transform: translateY(4px);
+        }
+              
+        #VS{
+            position: fixed;
+            top:250px;
+            font-size: 120px;
+            color:#fff;
+               }
+        #options{
+            position: fixed;
+            top:350px;
+            left:230px;
+            display: flex;
+            flex-direction: row;
+            gap:5em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="background">
+        <p id="title">
+           *** TIC - TAC  - TOE ***
+        </p>
+        <div id="VS">
+               VS 
+        </div>
+        <div id="options">
+        <button id="FRIEND" onclick="navigateToPage('tic-tac-toe_user.html')"> <!---using inline js --->
+            FRIEND
+        </button>
+        <button id="COMPUTER" onclick="navigateToPage('tic-tac-toe_comp.html')">
+            COMPUTER
+        </button>
+    </div>
+    </div>
+
+    <script>
+        function navigateToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html> 

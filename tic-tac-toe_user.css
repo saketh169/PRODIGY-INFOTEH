@@ -1,0 +1,228 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+body{
+    
+    background-image: url("https://4kwallpapers.com/images/wallpapers/3d-background-texture-geometric-shapes-pattern-illustration-2560x1440-4549.jpg");
+}
+#border{
+    position: relative;
+    left:10px;
+    width:1000px;
+    height:680px;
+    border:10px double black ;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #0077B6;
+   box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+   border-radius: 10%;
+    
+}
+
+#board{
+   height:650px;
+   width:750px;
+   border:6px dotted #023E8A;
+   display:flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   gap:6px;
+   background-color:#4CC9F0;
+   box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+   border-radius: 10%;
+   
+   
+}
+
+#board div{
+    position: relative;
+    height:200px;
+    width:200px;
+    border:5px solid black;
+    background-color: #90E0EF;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    display:flex;
+    align-content: center;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+   
+
+}
+
+#board div:hover{
+    opacity:0.6;
+} 
+
+#board div:active { 
+
+    transform: scale(1.05);
+}
+
+.circle-user1, .circle-user2{
+    position: fixed;
+    top:50px;
+    left:50px;
+    z-index: 10;
+    border-radius:50% !important ;
+    height: 100px !important;
+    width: 100px !important;
+   
+}
+
+.circle-user1 {
+    border: 8px double blue !important;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Yze92LjXx_utb9yGEOT7OF1s4fYXmFA5zg&s");
+    background-size: cover;
+}
+
+.circle-user2 {
+    border: 8px double red !important;
+    background-image:url("https://static-00.iconduck.com/assets.00/negative-squared-cross-mark-emoji-2048x2024-w43huur9.png");
+    background-size: cover;
+}
+
+#title{
+  font-size: 50px; 
+  position: fixed;
+  right:5px;
+  font-weight: bolder;
+  top:20px;
+  color:#1034A6;
+  text-decoration: underline;
+  padding:1px;
+  border:4px solid black;
+  background-color:aquamarine;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+}
+
+
+#one{
+border-top-left-radius:10%;
+}
+#three{
+    border-top-right-radius:10%;
+}
+#seven{
+    border-bottom-left-radius:10%;
+}
+#nine{
+    border-bottom-right-radius:10%;
+}
+
+
+
+#score-board{
+    height:200px;
+    width:400px;
+    border:6px double black;
+    position: fixed;
+    top:140px;
+    right:10px;
+    background-color: #6593F5;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
+p{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline;
+    border-bottom:8px double #023E8A;
+    
+}
+
+#names{
+    font-size: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    border-bottom:8px solid #023E8A;
+    color:aliceblue
+
+
+}
+
+
+#user{
+    padding-right:30px;
+    border-right:4px solid black;
+
+}
+#player1{
+    padding-right:90px;
+    border-right:4px solid black;
+
+}
+
+#scores{
+    font-size: 60px;
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+button{
+    height:80px;
+    width:250px;
+    font-size: 40px;
+    position: fixed;
+    right:30px;
+    bottom:150px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 15px;
+    box-shadow: 0 14px #999;
+    margin:60px;
+    border:7px solid white;
+
+
+}
+
+
+button:hover{
+    opacity:0.9;
+} 
+
+button:active { 
+    background-color:red;
+    transform: scale(1.05);
+
+}
+
+#back-arrow {
+   
+
+    height:70px;
+    width:70px;
+    font-size: 50px;
+    position: fixed;
+    right:10px;
+    bottom:5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius:100%;
+    box-shadow: 0 14px #999;
+    margin:60px;
+    border:7px solid white;
+
+}
+
+#back-arrow:hover {
+    background-color: #3e8e41;
+}
+#back-arrow:active {
+    background-color: rgb(213, 58, 58);
+    box-shadow: 0 20px #666;
+    transform: translateY(4px);
+}
+      
+
+
